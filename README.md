@@ -97,7 +97,7 @@ This repository contains a ROS 2-based simulation for a **semi-humanoid robot**,
 
 2. Clone the package from GitHub
 
-       git clone https://github.com/ros2/examples.git
+       git clone https://github.com/NanduGopakumarG/Arm_Robot_-G-Bot-.git
    
 4. Install any dependencies
    
