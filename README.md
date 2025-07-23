@@ -22,7 +22,7 @@ This repository contains a ROS 2-based simulation for a **semi-humanoid robot**,
 ## Repository Structure
 
        Arm_Robot_-G-Bot-/
-        ├──arm_robot/
+        ├── arm_robot/
         │ ├── config/
         │ │ └── controller_position.yaml
         │ ├── description/
