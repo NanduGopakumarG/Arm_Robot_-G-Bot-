@@ -63,9 +63,8 @@ This repository contains a ROS 2-based simulation for a **semi-humanoid robot**,
         │ ├── LICENSE
         │ ├── package.xml
         │ └── README.md
-        │
-        │
-        │
+        ├── LICENSE
+        └── README.md
     
 ---
 
