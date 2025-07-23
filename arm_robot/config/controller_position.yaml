@@ -1,0 +1,33 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    forward_position_controller:
+      type: forward_command_controller/ForwardCommandController    
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - R_J1
+      - R_J4
+      - R_J5
+    interface_name: position
+
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - R_J1
+      - R_J4
+      - R_J5
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

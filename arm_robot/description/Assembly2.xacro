@@ -1,0 +1,388 @@
+<?xml version="1.0" ?>
+<robot name="Assembly" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find arm_robot)/description/materials.xacro" />
+<xacro:include filename="$(find arm_robot)/description/Assembly.trans" />
+<xacro:include filename="$(find arm_robot)/description/Assembly.gazebo" />
+<xacro:include filename="$(find arm_robot)/description/gazebo_control.xacro" />
+<link name="base_footprint"/>
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0013250709844324947 -0.00043519370255990815 0.2017604824289771" rpy="0 0 0"/>
+    <mass value="2019.1165619720316"/>
+    <inertia ixx="135.014595" iyy="135.014507" izz="214.37354" ixy="-0.0" iyz="-0.0" ixz="0.077541"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_right_1_1_1">
+  <inertial>
+    <origin xyz="-0.022500130937923024 0.20613930698548177 -0.000938425261943765" rpy="0 0 0"/>
+    <mass value="7.042335739511805"/>
+    <inertia ixx="0.117271" iyy="0.002393" izz="0.117255" ixy="0.0" iyz="-2.1e-05" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.59538 -0.832427 -1.409197" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link3_right_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.59538 -0.832427 -1.409197" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link3_right_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_right_1_1">
+  <inertial>
+    <origin xyz="-0.02190385251291649 0.24571613683444726 -1.520120993436791e-05" rpy="0 0 0"/>
+    <mass value="8.376119019352862"/>
+    <inertia ixx="0.192619" iyy="0.003066" izz="0.192823" ixy="-0.001172" iyz="3e-05" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.55038 -0.35209 -1.410338" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link2_right_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.55038 -0.35209 -1.410338" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link2_right_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_right_1_1_1">
+  <inertial>
+    <origin xyz="-0.021865273748693514 0.23163654969834277 0.00023147922138799792" rpy="0 0 0"/>
+    <mass value="7.867924508155306"/>
+    <inertia ixx="0.161385" iyy="0.002881" izz="0.161602" ixy="-0.001091" iyz="7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.50538 0.097935 -1.41011" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link1_right_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.50538 0.097935 -1.41011" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link1_right_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_socket_1_1">
+  <inertial>
+    <origin xyz="0.007980635191397911 -1.9251701431632906e-07 -0.022499621731828068" rpy="0 0 0"/>
+    <mass value="0.563566204638768"/>
+    <inertia ixx="0.000176" iyy="0.000303" izz="0.000321" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.442354 0.097935 -1.43261" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/right_socket_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.442354 0.097935 -1.43261" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/right_socket_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="shoulder_right_1_1_1">
+  <inertial>
+    <origin xyz="0.17055899611655145 0.022499806297437974 0.0007133210326073502" rpy="0 0 0"/>
+    <mass value="8.538524944920457"/>
+    <inertia ixx="0.004852" iyy="0.109666" izz="0.107664" ixy="0.0" iyz="0.0" ixz="-0.001007"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.106444 0.120435 -1.355241" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/shoulder_right_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.106444 0.120435 -1.355241" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/shoulder_right_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_left_1_1_1">
+  <inertial>
+    <origin xyz="0.04028121362800319 0.20225731549793236 0.0005561337045063564" rpy="0 0 0"/>
+    <mass value="7.042335739511925"/>
+    <inertia ixx="0.116449" iyy="0.003266" izz="0.117306" ixy="-0.009979" iyz="1.2e-05" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.510985 -0.840368 -1.409571" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link3_left_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.510985 -0.840368 -1.409571" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link3_left_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_left_1_1">
+  <inertial>
+    <origin xyz="0.04323082242908477 0.24281195720444587 0.00032936242484060685" rpy="0 0 0"/>
+    <mass value="8.376119019352835"/>
+    <inertia ixx="0.191289" iyy="0.004303" izz="0.19273" ixy="-0.015305" iyz="2.6e-05" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.507858 -0.359793 -1.409883" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link2_left_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.507858 -0.359793 -1.409883" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link2_left_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_left_1_1">
+  <inertial>
+    <origin xyz="0.04197006224387129 0.22884946019912356 -0.00023078780901730767" rpy="0 0 0"/>
+    <mass value="7.867924508155289"/>
+    <inertia ixx="0.160371" iyy="0.003896" izz="0.161602" ixy="-0.012688" iyz="-6e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.502251 0.092442 -1.41011" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link1_left_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.502251 0.092442 -1.41011" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/link1_left_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_socket_1_1">
+  <inertial>
+    <origin xyz="-0.007949544516863472 0.0006953321472222551 -0.022499693810259735" rpy="0 0 0"/>
+    <mass value="0.5635662046387652"/>
+    <inertia ixx="0.000177" iyy="0.000302" izz="0.000321" ixy="1.1e-05" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.439466 0.097935 -1.43261" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/left_socket_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.439466 0.097935 -1.43261" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/left_socket_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="shoulder_left_1_1_1">
+  <inertial>
+    <origin xyz="-0.17055826140547903 0.022499806297440014 0.000713285284021703" rpy="0 0 0"/>
+    <mass value="8.538524944920463"/>
+    <inertia ixx="0.004852" iyy="0.109666" izz="0.107664" ixy="-0.0" iyz="0.0" ixz="0.001007"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.103556 0.120435 -1.355241" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/shoulder_left_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.103556 0.120435 -1.355241" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/shoulder_left_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="torso_1_1_1">
+  <inertial>
+    <origin xyz="0.0004849896288522035 -0.0005325584279023373 0.43281818893740964" rpy="0 0 0"/>
+    <mass value="254.06064753406892"/>
+    <inertia ixx="11.637779" iyy="13.030862" izz="2.355626" ixy="-6.6e-05" iyz="0.042224" ixz="0.050101"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.001444 0.000435 -0.610241" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/torso_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.001444 0.000435 -0.610241" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file:///home/nandu/ws/src/arm_robot/meshes/torso_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base_joint" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="base_footprint"/>
+  <child link="base_link"/>
+</joint>
+
+<joint name="R_J5" type="revolute">
+  <origin xyz="0.045 0.480337 -0.001141" rpy="0 0 0"/>
+  <parent link="link2_right_1_1"/>
+  <child link="link3_right_1_1_1"/>
+	<limit effort="10" velocity="1" upper="1.57" lower="-1.57"/>
+	<axis xyz="1 0 0"/>
+	<dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="R_J4" type="revolute">
+  <origin xyz="0.045 0.450025 0.000228" rpy="0 0 0"/>
+  <parent link="link1_right_1_1_1"/>
+  <child link="link2_right_1_1"/>
+	<limit effort="10" velocity="1" upper="1.57" lower="-1.57"/>
+	<axis xyz="1 0 0"/>
+	<dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="R_J3" type="fixed">
+  <origin xyz="0.063026 0.0 -0.0225" rpy="0 0 0"/>
+  <parent link="right_socket_1_1"/>
+  <child link="link1_right_1_1_1"/>
+</joint>
+
+<joint name="R_J2" type="fixed">
+  <origin xyz="0.33591 0.0225 0.077369" rpy="0 0 0"/>
+  <parent link="shoulder_right_1_1_1"/>
+  <child link="right_socket_1_1"/>
+</joint>
+
+<joint name="R_J1" type="revolute">
+  <origin xyz="0.105 -0.12 0.745" rpy="0 0 0"/>
+  <parent link="torso_1_1_1"/>
+  <child link="shoulder_right_1_1_1"/>
+	<limit effort="10" velocity="1" upper="1.57" lower="-1.57"/>
+	<axis xyz="0 1 0"/>
+	<dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+	<gazebo reference="base_link">
+		<static>true</static>
+	</gazebo>
+
+	<ros2_control name="GazeboSystem" type="system">
+    	<hardware>
+      		<plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    	</hardware>
+		
+		<joint name="R_J1">
+      		<command_interface name="position">
+        		<param name="min">-1.57</param>
+        		<param name="max">1.57</param>
+      		</command_interface>
+      		<state_interface name="position">
+				<param name="initial_value">${0}</param>
+			</state_interface>
+      		<state_interface name="velocity"/>
+      		<!--<state_interface name="effort"/>-->
+    	</joint>   		
+ 
+    	<joint name="R_J4">
+      		<command_interface name="position">
+        		<param name="min">-1.57</param>
+        		<param name="max">1.57</param>
+      		</command_interface>
+      		<state_interface name="position">
+				<param name="initial_value">${0}</param>
+			</state_interface>
+      		<state_interface name="velocity"/>
+      		<!--<state_interface name="effort"/>-->
+    	</joint>
+
+		<joint name="R_J5">
+      		<command_interface name="position">
+        		<param name="min">-1.57</param>
+        		<param name="max">1.57</param>
+      		</command_interface>
+      		<state_interface name="position">
+				<param name="initial_value">${0}</param>
+			</state_interface>
+      		<state_interface name="velocity"/>
+      		<!--<state_interface name="effort"/>-->
+    	</joint>
+  	</ros2_control>	
+
+<joint name="L_J5" type="fixed">
+  <origin xyz="-0.003127 0.480575 -0.000312" rpy="0 0 0"/>
+  <parent link="link2_left_1_1"/>
+  <child link="link3_left_1_1_1"/>
+</joint>
+
+<joint name="L_J4" type="fixed">
+  <origin xyz="-0.005607 0.452235 -0.000227" rpy="0 0 0"/>
+  <parent link="link1_left_1_1"/>
+  <child link="link2_left_1_1"/>
+</joint>
+
+<joint name="L_J3" type="fixed">
+  <origin xyz="-0.062785 0.005493 -0.0225" rpy="0 0 0"/>
+  <parent link="left_socket_1_1"/>
+  <child link="link1_left_1_1"/>
+</joint>
+
+<joint name="L_J2" type="fixed">
+  <origin xyz="-0.33591 0.0225 0.077369" rpy="0 0 0"/>
+  <parent link="shoulder_left_1_1_1"/>
+  <child link="left_socket_1_1"/>
+</joint>
+
+<joint name="L_J1" type="fixed">
+  <origin xyz="-0.105 -0.12 0.745" rpy="0 0 0"/>
+  <parent link="torso_1_1_1"/>
+  <child link="shoulder_left_1_1_1"/>
+</joint>
+
+<joint name="Torso" type="fixed">
+  <origin xyz="0.001444 -0.000435 0.610241" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="torso_1_1_1"/>
+</joint>
+
+</robot>
