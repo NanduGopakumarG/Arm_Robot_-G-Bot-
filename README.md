@@ -1,11 +1,11 @@
 # Arm_Robot_-G-Bot-
-# 🤖 Semi-Humanoid Robot Joint Control Simulation (ROS 2 + Gazebo)
+# Semi-Humanoid Robot Joint Control Simulation (ROS 2 + Gazebo)
 
 This repository contains a ROS 2-based simulation for a **semi-humanoid robot**, focusing on controlling three specific joints: `R_J5`, `R_J4`, and `R_J1`. The simulation utilizes **Gazebo** for physics-based visualization and **RViz** with **Joint State Publisher** for interactive testing.
 
 ---
 
-## 🧩 Features
+## Features
 
 - Simulated control of upper limb joints:
   - `R_J1`: Shoulder Joint
@@ -19,7 +19,7 @@ This repository contains a ROS 2-based simulation for a **semi-humanoid robot**,
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 arm_robot/
 ├── launch/
@@ -37,9 +37,7 @@ arm_robot/
 └── README.md
 
 
----
-
-## 🚀 Simulation Setup
+## Simulation Setup
 
 ### 1. Launch Gazebo Simulation
 
