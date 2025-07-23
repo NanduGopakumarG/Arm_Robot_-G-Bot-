@@ -21,47 +21,51 @@ This repository contains a ROS 2-based simulation for a **semi-humanoid robot**,
 
 ## Repository Structure
 
-    arm_robot/
-      ├── config/
-      │ └── controller_position.yaml
-      ├── description/
-      │ ├── Assembly.gazebo
-      │ ├── Assembly.trans
-      │ ├── Assembly.xacro
-      │ ├── Assembly2.xacro
-      │ ├── gazebo_control.xacro
-      │ ├── inertial_macros.xacro
-      │ ├── materials.xacro
-      │ ├── robot.urdf.xacro
-      │ └── robot_core_lr.xacro
-      ├── img/
-      │ └── lr.png
-      ├── launch/
-      │ ├── control.launch.py
-      │ ├── launch_sim.launch.py
-      │ ├── rsp.launch.py
-      │ └── rviz.launch.py
-      ├── meshes/
-      │ ├── base_link.stl
-      │ ├── left_socket_1_1.stl
-      │ ├── link1_left_1_1.stl
-      │ ├── link1_right_1_1_1.stl
-      │ ├── link2_left_1_1.stl
-      │ ├── link2_right_1_1.stl
-      │ ├── link3_left_1_1_1.stl
-      │ ├── link3_right_1_1_1.stl
-      │ ├── right_socket_1_1.stl
-      │ ├── shoulder_left_1_1_1.stl
-      │ ├── shoulder_right_1_1_1.stl
-      │ └── torso_1_1_1.stl
-      ├── rviz/
-      │ └── default.rviz
-      ├── src/
-      │ └── control.py
-      ├── CMakeLists.txt
-      ├── LICENSE
-      ├── package.xml
-      └── README.md
+       Arm_Robot_-G-Bot-/
+        ├──arm_robot/
+        │ ├── config/
+        │ │ └── controller_position.yaml
+        │ ├── description/
+        │ │ ├── Assembly.gazebo
+        │ │ ├── Assembly.trans
+        │ │ ├── Assembly.xacro
+        │ │ ├── Assembly2.xacro
+        │ │ ├── gazebo_control.xacro
+        │ │ ├── inertial_macros.xacro
+        │ │ ├── materials.xacro
+        │ │ ├── robot.urdf.xacro
+        │ │ └── robot_core_lr.xacro
+        │ ├── img/
+        │ │ └── lr.png
+        │ ├── launch/
+        │ │ ├── control.launch.py
+        │ │ ├── launch_sim.launch.py
+        │ │ ├── rsp.launch.py
+        │ │ └── rviz.launch.py
+        │ ├── meshes/
+        │ │ ├── base_link.stl
+        │ │ ├── left_socket_1_1.stl
+        │ │ ├── link1_left_1_1.stl
+        │ │ ├── link1_right_1_1_1.stl
+        │ │ ├── link2_left_1_1.stl
+        │ │ ├── link2_right_1_1.stl
+        │ │ ├── link3_left_1_1_1.stl
+        │ │ ├── link3_right_1_1_1.stl
+        │ │ ├── right_socket_1_1.stl
+        │ │ ├── shoulder_left_1_1_1.stl
+        │ │ ├── shoulder_right_1_1_1.stl
+        │ │ └── torso_1_1_1.stl
+        │ ├── rviz/
+        │ │ └── default.rviz
+        │ ├── src/
+        │ │ └── control.py
+        │ ├── CMakeLists.txt
+        │ ├── LICENSE
+        │ ├── package.xml
+        │ └── README.md
+        │
+        │
+        │
     
 ---
 
